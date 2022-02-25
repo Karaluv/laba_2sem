@@ -12,7 +12,7 @@ int GetLen(int length, bool first)
     return (length / 2 + (length % 2) * (first));
 }
 
-int &cut_array(int *array2cut, int length_1)
+int& cut_array(int *array2cut, int length_1)
 {
     return *(array2cut + length_1);
 }
