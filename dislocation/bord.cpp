@@ -240,13 +240,13 @@ int main(int args, char **argv)
     int min_chance = 6;
 
     int step_chance = 1;
-    boundary_condition(-1,5,5);
+    boundary_condition(-1, 5, 5);
     assert(boundary_condition(5) == 8);
     assert(boundary_condition(9) == 6);
     assert(boundary_condition(2) == 17);
     assert(boundary_condition(22) == 7);
     assert(boundary_condition(13) == 13);
-    //assert(boundary_condition(5,4,4) == 7);
+    // assert(boundary_condition(5,4,4) == 7);
 
     ofstream myfile;
     myfile.open("C://Users//egrvr//Documents//jog1.csv", ofstream::out | ofstream::trunc);

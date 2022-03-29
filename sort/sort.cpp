@@ -29,7 +29,7 @@ void sort_small_array(int *array, int length)
                 swap(array[j], array[j + 1]);
                 found = true;
             }
-        }
+        }  
         if (!found)
         {
             break;
@@ -82,13 +82,13 @@ void generate_array(int arr[], int length)
 {
     for (int i = 0; i < length; i++)
     {
-        arr[i] = (rand() % 10);
+        arr[i] = (rand());
     }
 }
 
 void check()
 {
-    int length = 1000;
+    int length = 100000;
     int array2sort[length];
     int array_output[length];
     generate_array(array2sort, length);
